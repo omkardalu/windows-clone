@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+section{
+    background-image: url(../image/wallpaperflare.com_wallpaper.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.taskbar{
+    height: 48px;
+    width: 100vw;
+    background-color: rgba(21, 15, 3, 0.593);
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgb(68, 68, 68);
+}
+.empty{
+    flex-grow: 3;
+}
+.icons img{
+    height:29px;
+    margin: 7px;
+    padding: 3px;
+   
+}
+.icons img:hover,.tools:hover{
+    border-radius: 4px;
+    background-color: rgba(176, 180, 180, 0.271);
+}
+.icons{
+    /* margin-right:auto ;
+    margin-left: 40%; */
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 6;
+}
+.clock{
+    
+}
+.task-bar-tools{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color:white;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    padding: 4px;
+}
+.hardware-status-tools{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    padding: 6px;
+}
+.hardware-status-tools>div{
+    margin: 3px;
+}
+
+.tools{
+    margin-inline: 3px;
+    text-align: right;
+    padding: 6px;
+}
+
+.timg{
+    height: 18px;
+}
+
+#window-start-menu{
+    border: 1px solid rgb(68, 68, 68);
+    width: clamp(42.5vw,550px,45vw);
+    height:clamp( 85vh,740px,90vh);
+    border-radius: 10px;
+    margin: auto auto 10px auto;
+    background-color: rgba(44, 44, 44, 0.622);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+#window-start-menu #search{
+   width: 36vw;
+   height: 26px;
+   background-color: rgb(31, 30, 30);
+   color: gray;
+   border: 1px solid  rgb(68, 68, 68);
+   outline: none;
+   border-radius: 20px;
+   padding: 7px;
+   margin: 20px;
+}
+#window-start-menu .search{
+    align-self: center;
+}
+#window-start-menu .pinned{
+    flex-grow: 1.12;
+}
+#window-start-menu .recommended{
+    flex-grow: 1;
+}
+.apps-group{
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-content: flex-start;
+}
+.pinned .app{
+    height: 70px;
+    width: 100px;
+    padding: 5px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+.pinned-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 0.8em;
+
+}
+.allapps{
+    background-color: rgba(102, 102, 102, 0.415);
+    padding: 5px;
+    border-radius: 5px;
+}
+.app:hover,.rec:hover{
+    background-color: rgba(102, 102, 102, 0.415);
+}
+.pinned img{
+    height: 33px;
+}
+.recommended-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 0.8em;
+}
+.recommeded-recs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-size: 0.8em;
+}
+.rec img{
+    height: 40px;
+}
+
+.rec{
+    display: flex;
+    gap: 10px;
+    
+    padding: 10px;
+    width: 40%;
+    align-items: center;
+    border-radius: 4px;
+  justify-content:flex-start;
+
+}
+.about{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 50px;
+    background-color: rgba(28, 28, 28, 0.622);
+    margin-inline: -20px ;
+    margin-bottom: -20px;
+    border-radius: 4px;
+}
