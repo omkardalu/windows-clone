@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+    background-image: url(../image/wallpaperflare.com_wallpaper.jpg);
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
 }
 .thispc{
     background-color: rgba(0, 0, 0, 0.848);
@@ -24,11 +33,18 @@
     margin-inline: 9px;
 }
 .tabs{
-    background-color: rgb(65, 65, 65);
+    backdrop-filter: blur(30px);
+    background-color: rgba(92, 91, 91, 0.637);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-inline: 10px;
+}
+#q1{
+    transform: rotate(-90deg);
+}
+#q3{
+    transform: rotate(90deg);
 }
 .controls{
     display: flex;
@@ -89,5 +105,66 @@ img{
     color: white;
 }
 .hvr:hover{
+    background-color: rgba(128, 128, 128, 0.503);
+}
+.left-side{
+    border: 1px solid rgba(134, 134, 134, 0.205);
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+    height:89dvh;
+    font-size: 0.85rem;
+}
+
+.loc{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    /* background-color: bisque; */
+    padding: 15px;
+    margin: 5px;
+    color: white;
+}
+.second,.third{
+    border-top: 1px solid rgba(134, 134, 134, 0.205);
+}
+main{
+    display: flex;
+    align-items: flex-start;
+    backdrop-filter: blur(20px);
+    background-color: rgba(18, 18, 18, 0.948);
+}
+.right-side{
+    display: flex;
+    width: 90vw;
+}
+.drives{
+    display: inline-flex;
+    font-size: 0.7rem;
+    /* border: 2px solid wheat; */
+    padding: 10px;
+    width: 245px;
+}
+.drives img{
+    height: 50px;
+}
+.drives .cont{
+    width: 160px;
+    height: 14px;
+    margin: 5px;
+    background-color: white;
+    padding: 1px;
+}
+.filler{
+    width: 50%;
+    background-color: blue;
+    height: 99%;
+}
+.thispc-content{
+    padding: 10px;
+    width: 75vw;
+    border: 1px solid rgba(134, 134, 134, 0.205);
+}
+.third summary{
     background-color: rgba(128, 128, 128, 0.503);
 }

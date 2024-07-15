@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-a , a:visited{
+a,a:visited{
     text-decoration: none;
     color: inherit;
 }
@@ -57,8 +57,6 @@ a , a:visited{
     justify-content: flex-end;
     flex-grow: 6;
 }
-
-.clock {}
 
 .task-bar-tools {
     display: flex;
