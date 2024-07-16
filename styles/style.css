@@ -44,7 +44,7 @@ a,a:visited{
 
 }
 
-.icons img:hover,
+.icons>img:hover,
 .tools:hover {
     border-radius: 4px;
     background-color: rgba(176, 180, 180, 0.271);
@@ -88,22 +88,27 @@ a,a:visited{
 .timg {
     height: 18px;
 }
-
 #window-start-menu {
     border: 1px solid rgb(68, 68, 68);
     width: clamp(42.5vw, 550px, 45vw);
     height: clamp(85vh, 740px, 90vh);
     border-radius: 10px;
     margin: auto auto 10px auto;
-    background-color: rgba(44, 44, 44, 0.622);
+    background-color: rgba(30, 30, 30, 0.804);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     color: white;
-    backdrop-filter: blur(10px);
-    padding: 20px;
-}
 
+    padding: 20px;
+    position: absolute;
+    bottom: 45px;
+    left:30vw;
+    transition: all 0.2s ease;
+}
+summary{
+    list-style: none;
+}
 #window-start-menu #search {
     width: 36vw;
     height: 26px;
@@ -214,16 +219,26 @@ a,a:visited{
     margin-bottom: -20px;
     border-radius: 4px;
 }
-#password{
+.pass>input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.pass{
     height: 30px;
     width: 200px;
     color: white;
     background-color: rgba(0, 0, 0, 0.642);
     padding: 5px;
     border-radius:4px ;
-    outline: none;
+    display: flex;
     border:1px solid transparent;
     border-bottom: 3px solid skyblue;
+}
+.pass img{
+    height: 20px;
+    transform: rotate(90deg);
+
 }
 #lockscreen {
     background-image: url('../image/wallpaperflare.com_wallpaper.jpg');
