@@ -132,7 +132,62 @@ summary{
 #window-start-menu .recommended {
     flex-grow: 1;
 }
+.hardware-tools{
+    background-color: rgba(30, 30, 30, 0.804);
+    width: 21rem;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid  rgb(68, 68, 68);
+    position: absolute;
+    bottom: 55px;
+    right: 20px;
+}
+.sys-tools{
+    display: flex;
+    flex-wrap: wrap;
 
+}
+.stools{
+    width: 90px;
+    height: 50px;
+    background-color: rgba(42, 41, 41, 0.884);
+    border: 1px solid rgb(68, 68, 68);
+    margin: 10px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.stools:hover{
+    background-color: rgb(61, 197, 251);
+}
+.hardware-tools img{
+    width: 21px;
+    margin: 10px;
+}
+.stools .more{
+    height: inherit;
+    width: 50px;
+    border: 1px solid rgb(68, 68, 68);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+[type=range]{
+    width: 250px;
+}
+.range,.sys-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.sys-range{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 .apps-group {
     padding: 0px;
     display: flex;
@@ -142,7 +197,11 @@ summary{
     gap: 20px;
     align-content: flex-start;
 }
-
+.sys-info{
+    background-color: rgba(42, 41, 41, 0.884) ;
+    height: 40px;
+    border-radius: 10px;
+}
 .pinned .app {
     height: 70px;
     width: 100px;
