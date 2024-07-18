@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Windows Explorer</title>
+    <link rel="shortcut icon" href="./image/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="./styles/explorer-style.css">
 </head>
 
@@ -14,16 +15,21 @@
             <div class="tabs">
                 <div class="thispc">
                     <div><img src="./image/Computer.png">
-                        <p>This pc</p></div>
-                    <a href="home.html"><p class="hvr">X</p></a>
+                        <p>This pc</p>
+                    </div>
+                    <a href="home.html">
+                        <p class="hvr">X</p>
+                    </a>
                 </div>
-                <div class="controls"><a class="hvr" href="home.html">—</a><a class="hvr" href="">😶‍🌫️</a><a class="hvr" href="home.html">❌</a></div>
+                <div class="controls"><a class="hvr" href="home.html">—</a><a class="hvr" href="">😶‍🌫️</a><a
+                        class="hvr" href="home.html">❌</a></div>
             </div>
             <div class="tool-bar">
-                <div class="arrows"><img id="q1" class="hvr" src="./image/arrow.svg"><img class="hvr" id="q2" src="./image/arrow.svg"><img class="hvr"
-                      id="q3"  src="./image/arrow.svg"></div>
+                <div class="arrows"><img id="q1" class="hvr" src="./image/arrow.svg"><img class="hvr" id="q2"
+                        src="./image/arrow.svg"><img class="hvr" id="q3" src="./image/arrow.svg"></div>
                 <div class="tasks"> <img src="./image/Computer.png"> > This PC </div>
-                <div  class="search"><input  type="text" placeholder="Search This PC"> <img class="hvr" src="./image/search.webp" alt=""></div>
+                <div class="search"><input type="text" placeholder="Search This PC"> <img class="hvr"
+                        src="./image/search.webp" alt=""></div>
             </div>
         </div>
     </header>
@@ -35,6 +41,44 @@
             </div>
             <div class="second">
                 <div class="loc hvr desktop"><img src="./image/logo.webp" alt="">Desktop</div>
+                <details>
+                    <summary>
+                        <div class="loc hvr desktop"><img src="./image/File_Explorer_Icon.webp" alt="">My Clone</div>
+                    </summary>
+                    <div class="my-clones ">
+                        <a href="https://jovial-puppy-c62964.netlify.app/">
+                            <div class="flipcart cln hvr">
+                                <img src="./image/Microsoft_Edge.png">
+                                <p>flipcart</p>
+                            </div>
+                        </a>
+                        <a href="https://omkardalu.github.io/apple-clone/">
+                            <div class="Apple.com cln hvr">
+                                <img src="./image/Microsoft_Edge.png">
+                                <p>Apple.com</p>
+                            </div>
+                        </a>
+                        <a href="https://omkardalu.github.io/windows-clone/">
+                            <div class="windows-11 cln hvr">
+                                <img src="./image/Microsoft_Edge.png">
+                                <p>Windows 11</p>
+                            </div>
+                        </a>
+                        <a href="https://singular-macaron-e9a502.netlify.app/">
+                            <div class="whatsapp cln hvr">
+                                <img src="./image/Microsoft_Edge.png">
+                                <p>WhatsApp</p>
+                            </div>
+                        </a>
+                        <a href="https://stunning-marigold-c91692.netlify.app/">
+                            <div class="olamovies cln hvr">
+                                <img src="./image/Microsoft_Edge.png">
+                                <p>Olamovies</p>
+                            </div>
+                        </a>
+                    </div>
+                </details>
+
                 <div class="loc hvr downloads"><img src="./image/explorer-download-logo.svg" alt="">Downloads</div>
                 <div class="loc hvr documents"><img src="./image/explorer-document-logo.svg" alt="">Documents</div>
                 <div class="loc hvr pictures"><img src="./image/explorer-gallary-logo.svg" alt="">Pictures</div>
@@ -42,19 +86,19 @@
                 <div class="loc hvr folder"><img src="./image/File_Explorer_Icon.webp" alt="">New folder</div>
                 <div class="loc hvr folder"><img src="./image/File_Explorer_Icon.webp" alt="">New Folder</div>
             </div>
-           <div class="third">
-            <details>
-                <summary class="loc hvr"><img src="./image/explorer-desktop-logo.svg">This PC</summary>
-                <div class="loc hvr os"><img src="./image/drive.png">OS(C:)</div>
-                <div class="loc hvr LDD"><img src="./image/drive.png">Local Disk(D:)</div>
-                <div class="loc hvr LDE"><img src="./image/drive.png">Local Disk(E:)</div>
-            </details>
-            <div class="loc hvr net"><img src="./image/explorer-desktop-logo.svg">Networks</div>
-           </div>
+            <div class="third">
+                <details>
+                    <summary class="loc hvr"><img src="./image/explorer-desktop-logo.svg">This PC</summary>
+                    <div class="loc hvr os"><img src="./image/drive.png">OS(C:)</div>
+                    <div class="loc hvr LDD"><img src="./image/drive.png">Local Disk(D:)</div>
+                    <div class="loc hvr LDE"><img src="./image/drive.png">Local Disk(E:)</div>
+                </details>
+                <div class="loc hvr net"><img src="./image/explorer-desktop-logo.svg">Networks</div>
+            </div>
         </div>
         <div class="right-side">
-            <details class="thispc-content ">
-                <summary class="hvr loc">> Devices and drives</summary>
+            <div class="thispc-content ">
+                <summary class="hvr loc">> Devices and drives > my-Clones is usable</summary>
                 <div class=" drives os hvr">
                     <img class="tpc" src="./image/drive.png">
                     <div class=" os">
@@ -80,13 +124,14 @@
                     <div class=" os">
                         <p>Local Disk(E:)</p>
                         <div class="cont">
-                            <div class="filler"style=" width:1%"></div>
+                            <div class="filler" style=" width:1%"></div>
                         </div>
                         <p>2.9 GB free of 3 GB</p>
                     </div>
                 </div>
-            </details>
+            </div>
         </div>
+        
     </main>
 </body>
 

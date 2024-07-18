@@ -170,6 +170,22 @@ main{
     width: 75vw;
     border: 1px solid rgba(134, 134, 134, 0.205);
 }
-.third summary{
+.third summary,.second summary{
+    list-style: none;
     background-color: rgba(128, 128, 128, 0.503);
+}
+.my-clones{
+    position: absolute;
+    left: 140px;
+    top: 0px;
+    width: 80vw;
+    background-color:  rgba(18, 18, 18, 0.948);
+    backdrop-filter: blur(20px);
+}
+.cln{
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    padding: 5px;
+    border: 1px solid rgba(134, 134, 134, 0.205);
 }

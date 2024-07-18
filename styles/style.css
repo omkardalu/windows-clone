@@ -9,6 +9,44 @@ a,a:visited{
     color: inherit;
 }
 
+ .anime{
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  z-index: 10;
+  animation: ani-back 2s 1;
+} 
+
+.anime img{
+    width: 140px;
+    animation: ani 2s 1; 
+}
+
+@keyframes ani{
+    0%{
+        width: 100vw;  
+     }
+    100%{
+      width: 140px; 
+      opacity: 0;
+    }
+}
+@keyframes ani-back{
+    0%{
+       display: flex;
+    }
+    99%{
+        background-color: black;
+    }
+    100%{
+        display: none; 
+        background-color: transparent;
+    }
+}
 #section {
     background-image: url(../image/wallpaperflare.com_wallpaper.jpg);
     height: 100vh;
@@ -19,7 +57,30 @@ a,a:visited{
     flex-direction: column;
     justify-content: flex-end;
 }
+.desktop-app{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    color: white;
+}
+.desktop-app:hover{
+    background-color: rgba(255, 255, 255, 0.168);
+    backdrop-filter: blur(20px);
+}
+.desktop-app img{
+    height: 50%;
 
+}
+.clones{
+    top: 100px;
+    position: absolute;
+}
 .taskbar {
     height: 48px;
     width: 100vw;
@@ -94,17 +155,15 @@ a,a:visited{
     height: clamp(85vh, 740px, 90vh);
     border-radius: 10px;
     margin: auto auto 10px auto;
-    background-color: rgba(30, 30, 30, 0.804);
+    background-color: rgba(42, 41, 41, 0.89);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     color: white;
-
     padding: 20px;
     position: absolute;
     bottom: 45px;
     left:30vw;
-    transition: all 0.2s ease;
 }
 summary{
     list-style: none;
@@ -133,7 +192,8 @@ summary{
     flex-grow: 1;
 }
 .hardware-tools{
-    background-color: rgba(30, 30, 30, 0.804);
+    background-color:rgba(42, 41, 41, 0.89);
+    
     width: 21rem;
     border-radius: 10px;
     color: white;
@@ -145,7 +205,6 @@ summary{
 .sys-tools{
     display: flex;
     flex-wrap: wrap;
-
 }
 .stools{
     width: 90px;
@@ -159,11 +218,11 @@ summary{
     overflow: hidden;
 }
 .stools:hover{
-    background-color: rgb(61, 197, 251);
+    background-color: #0BA1E5;
 }
 .hardware-tools img{
-    width: 21px;
-    margin: 10px;
+    width: 20px;
+    margin: 12px;
 }
 .stools .more{
     height: inherit;
@@ -198,9 +257,8 @@ summary{
     align-content: flex-start;
 }
 .sys-info{
-    background-color: rgba(42, 41, 41, 0.884) ;
+    background-color:rgb(28, 27, 27) ;
     height: 40px;
-    border-radius: 10px;
 }
 .pinned .app {
     height: 70px;
@@ -310,6 +368,7 @@ summary{
     flex-direction: column;
     justify-content: flex-end;
     height: 100vh;
+    z-index: 2;
 }
 
 #lock-logo {
