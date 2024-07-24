@@ -340,6 +340,7 @@ summary{
     background-color: transparent;
     outline: none;
     border: none;
+    color: white;
 }
 .pass{
     height: 30px;
