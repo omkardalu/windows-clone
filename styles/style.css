@@ -81,6 +81,11 @@ a,a:visited{
     top: 100px;
     position: absolute;
 }
+.intigrated-search{
+    top: 220px;
+    position: absolute;
+    text-align: center;
+}
 .taskbar {
     height: 48px;
     width: 100vw;
@@ -102,7 +107,6 @@ a,a:visited{
     height: 29px;
     margin: 7px;
     padding: 3px;
-
 }
 
 .icons>img:hover,
@@ -112,8 +116,6 @@ a,a:visited{
 }
 
 .icons {
-    /* margin-right:auto ;
-    margin-left: 40%; */
     display: flex;
     justify-content: flex-end;
     flex-grow: 6;
@@ -341,10 +343,11 @@ summary{
     outline: none;
     border: none;
     color: white;
+    margin-right: auto;
 }
 .pass{
     height: 30px;
-    width: 200px;
+    width: 270px;
     color: white;
     background-color: rgba(0, 0, 0, 0.642);
     padding: 5px;

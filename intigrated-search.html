@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IDontKnow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale:1.0">
+    <style>
+        * {
+            margin: 0;
+            
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: skyblue;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        fieldset {
+            width: 400px;
+            border-radius: 20px;
+            border-color: skyblue;
+        }
+
+        form h2,
+        .logo {
+            color: transparent;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to left, black, black, skyblue, white, skyblue, black, black);
+        }
+
+        button {
+            background-image: linear-gradient(to left, black, skyblue, white, skyblue, black);
+            border: 1px solid transparent;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 4px;
+            transition: all 0.5s;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        button:hover {
+            background-image: linear-gradient(to left, white, skyblue, skyblue, white);
+            border: 1px solid skyblue;
+            border-radius: 4px;
+            color: black;
+            transition: all 0.5s;
+        }
+
+        input {
+            background-color: black;
+            border-radius: 10px;
+            outline: none;
+            border-color: skyblue;
+            color: skyblue;
+            box-shadow: 0 0 10px rgb(117, 163, 182);
+            padding: 10px;
+            width: 150px;
+        }
+
+        .image {
+            width: 100px;
+        }
+
+        .card {
+            margin: 7px;
+            filter: brightness(0.09);
+            transition: all 1s;
+        }
+
+        .hover-effect {
+            display: flex;
+            justify-content: center;
+            margin-block: 50px;
+        }
+
+        .card:hover {
+            transition: 0.5s;
+            filter: brightness(1);
+            transform: scale(1.5);
+        }
+
+        .card:hover+* {
+            transition: 0.4s;
+            filter: brightness(0.4);
+            transform: translateX(12px);
+        }
+
+        .card:hover+*+* {
+            transition: 0.8s;
+            filter: brightness(0.3);
+            transform: translateX(5px);
+        }
+
+        .card:has(+*:hover) {
+            transition: 0.4s;
+            filter: brightness(0.4);
+            transform: translateX(-12px);
+        }
+
+        .card:has(+*+*:hover) {
+            transition: 0.8s;
+            filter: brightness(0.3);
+            transform: translateX(-5px);
+        }
+
+        .thispc {
+            background-color: rgba(0, 0, 0, 0.848);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 250px;
+            height: 37px;
+            border-radius: 10px 10px 0 0;
+            margin-block: 2px 0px;
+            color: white;
+            font-size: 0.9rem;
+            padding: 20px;
+        }
+
+        .thispc>div {
+            display: inline-flex;
+        }
+
+        .tabs {
+            backdrop-filter: blur(30px);
+            background-color: rgba(92, 91, 91, 0.637);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-inline: 10px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-evenly;
+            width: 150px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            border-radius: 1px;
+        }
+
+        .logo {
+            animation: ani 3s;
+            margin: 80px;
+            font-size: 4rem;
+            transition: color 2s;
+        }
+
+        @keyframes ani {
+            0% {
+                /* position: absolute; */
+                margin: 350px;
+                transition: all 2s;
+                transform: scale(5);
+                text-shadow: none;
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="task-bar">
+            <div class="tabs">
+                <div class="thispc">
+                    <div>
+                        <p>Intigrated</p>
+                    </div>
+                    <a href="home.html">
+                        <p class="hvr">X</p>
+                    </a>
+                </div>
+                <div class="controls"><a class="hvr" href="home.html">—</a><a class="hvr" href="">😶‍🌫️</a><a
+                        class="hvr" href="home.html">❌</a></div>
+            </div>
+    </header>
+    <h1 class="logo" align="center">what will you search</h1>
+
+    <main align="center">
+        <form target="_blank" action="https://www.youtube.com/results">
+            <h2>You Tube</h2>
+            <input type="text" name="search_query">
+            <button>search</button>
+        </form><br><br>
+        <form target="_blank" action="https://www.flipkart.com/search">
+            <h2>Flipcart</h2>
+            <input type="text" name="q">
+            <button>search</button>
+        </form><br><br>
+        <form target="_blank" action="https://www.amazon.in/s">
+            <h2>Amazon</h2>
+            <input type="text" name="k">
+            <button>search</button>
+        </form>
+        <br><br>
+        <form target="_blank" action="https://www.google.co.in/search">
+            <h2>Google</h2>
+            <input id="google" type="text" name="q">
+            <button>search</button>
+        </form>
+
+    </main>
+    <section class="hover-effect">
+        <div class="card">
+            <img class="image" src="./image/wallpaperflare.com_wallpaper (2).jpg">
+        </div>
+        <div class="card">
+            <img class="image" src="./image/wallpaperflare.com_wallpaper (2).jpg">
+        </div>
+        <div class="card">
+            <img class="image" src="./image/wallpaperflare.com_wallpaper (2).jpg">
+        </div>
+        <div class="card">
+            <img class="image" src="./image/wallpaperflare.com_wallpaper (2).jpg">
+        </div>
+        <div class="card">
+            <img class="image" src="./image/wallpaperflare.com_wallpaper (2).jpg">
+        </div>
+        <div class="card">
+            <img class="image" src="./image/wallpaperflare.com_wallpaper (2).jpg">
+        </div>
+        <div class="card">
+            <img class="image" src="./image/wallpaperflare.com_wallpaper (2).jpg">
+        </div>
+        <div class="card">
+            <img class="image" src="./image/wallpaperflare.com_wallpaper (2).jpg">
+        </div>
+        <div class="card">
+            <img class="image" src="./image/wallpaperflare.com_wallpaper (2).jpg">
+        </div>
+        <div class="card">
+            <img class="image" src="./image/wallpaperflare.com_wallpaper (2).jpg">
+        </div>
+    </section>
+
+
+    <footer>
+    </footer>
+
+</body>
+
+</html>
